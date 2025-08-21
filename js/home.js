@@ -5,7 +5,8 @@ const addMoney = document.getElementById('amount-input').value;
         const finalAmount = document.getElementById('final-amount').innerText;
     if (pin === '1234') {
         
-        const finalAmountNew = Number(finalAmount) + Number(addMoney)
+        // const finalAmountNew = Number(finalAmount) + Number(addMoney)
+        const finalAmountNew = parseFloat(finalAmount) + parseFloat(addMoney)
         document.getElementById('final-amount').innerText = finalAmountNew;
 
     }
