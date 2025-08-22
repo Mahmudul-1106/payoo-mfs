@@ -26,15 +26,15 @@
                 
                 <!-- Button Action -->
                 <div>
-                    <button class="btn btn-lg">Add Money</button>
-                    <button class="btn btn-lg">Cashout</button>
+                    <button id="btn-add" class="btn btn-lg">Add Money</button>
+                    <button id="btn-out" class="btn btn-lg">Cashout</button>
                 </div>
 
                 <!-- Divider -->
                 <div class="divider"></div>
 
-                <!-- Form action -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <!--Add Money Form action -->
+                <div id="addmoney-form" class="hidden card bg-green-200 w-full max-w-sm shrink-0 shadow-2xl">
                     <div class="card-body">
                         <fieldset class="fieldset">
                             <label class="label">Amount To Add</label>
@@ -45,11 +45,24 @@
                         </fieldset>
                     </div>
                 </div>
+                <!--Cashout Form action -->
+                <div id="cashout-form" class="hidden bg-red-200 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label">Amount To Cashout</label>
+                            <input id="amount-cashout" type="text" class="input" placeholder="Cashout Amount" />
+                            <label class="label">Pin</label>
+                            <input id="pin-cashout" type="password" class="input" placeholder="Pin" />
+                            <button id="btn-cashout" class="btn btn-neutral mt-4 bg-blue-500">Cashout</fieldset>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
     </main>
-    <script src="js/home.js"></script>
+    <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/function.js"></script>
 </body>
 
 </html>
